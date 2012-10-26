@@ -20,7 +20,9 @@ a {
 	background-color: transparent;
 	font-weight: normal;
 }
-
+.red {
+    color: #B55D5C;
+}
 h1 {
 	color: #444;
 	background-color: transparent;
@@ -44,7 +46,7 @@ code {
 
 #container {
 	margin: 10px;
-	border: 1px solid #D0D0D0;
+	text-align: center;
 	-webkit-box-shadow: 0 0 8px #D0D0D0;
 }
 
@@ -55,8 +57,9 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+		<img alt="" src="/application/images/loginLogo.png">
+		<h1><?=$heading?></h1>
+		<span class="red"><?=$message?></span>
 	</div>
 </body>
 </html>
