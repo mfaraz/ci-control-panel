@@ -9,8 +9,19 @@
 |	http://codeigniter.com/user_guide/general/hooks.html
 |
 */
-
-
+$hook['post_controller_constructor'] = array(
+	'class'  => 'Logged',
+	'function' => 'check',
+	'filename' => 'check_logged.php',
+	'filepath' => 'hooks'
+);
+                      
+$hook['post_controller'] = array(
+	'class'		=> 'Template',
+	'function' 	=> 'build_template',
+	'filename' 	=> 'template.php',
+	'filepath' 	=> 'hooks'
+);
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */

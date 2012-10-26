@@ -41,6 +41,16 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
+/* PANNELLO DI CONTROLLO */
+$route['admin']                 = "sys/dashboard";
+$route['admin/dashboard']       = "sys/dashboard";
+$route['admin/login']       	= "sys/login";
+$route['admin/register']    	= "sys/register";
+$route['admin/logout']       	= "sys/logout";
+$route['admin/help']       		= "sys/help";
+
+$route['admin/(:any)']          = "$1";
+$route['admin/(:any)/(:any)']   = "$1/$2";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

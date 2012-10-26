@@ -19,6 +19,16 @@
  *
  */
 	define('ENVIRONMENT', 'development');
+
+/*
+ *---------------------------------------------------------------
+ * DEFAULT TIMEZONE
+ *---------------------------------------------------------------
+ *
+ * Default Timezone set
+ */
+	date_default_timezone_set('Europe/Rome');
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
